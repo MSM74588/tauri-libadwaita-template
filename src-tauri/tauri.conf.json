@@ -4,7 +4,7 @@
     "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm run dev",
     "devPath": "http://localhost:5173",
-    "distDir": "../public"
+    "distDir": "../build"
   },
   "package": {
     "productName": "tauri-windows-clock-app-test",
@@ -41,7 +41,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.msm.test",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
