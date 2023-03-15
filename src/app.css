@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --background: #1b1c18;
+    --titlebar: #262b1e;
+    --primaryfont: #ffffff;
+    --buttonbg: #383e2f;
+    --buttonbghover: #48503c;
+    --border_color: #3f3f46;
+}
+
 *{
     user-select: none;
 }

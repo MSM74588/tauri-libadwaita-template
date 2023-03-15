@@ -42,7 +42,7 @@
 <div class="flex flex-col w-screen  h-screen bg-transparent">
 	<div
 		id="title-bar"
-		class="bg-[#262b1e] h-12  rounded-t-xl border-gray-700 border-[1px] select-none text-white hover:cursor-default relative"
+		class="bg-background h-12  rounded-t-xl border-border_color border-[1px] select-none text-primaryfont hover:cursor-default relative"
 	>
 		<div
 			class="w-full h-full absolute top-0 flex align-middle flex-row justify-center"
@@ -63,42 +63,42 @@
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<div
 					id="minimise"
-					class="w-6 bg-[#383e2f] aspect-square rounded-full duration-150 hover:bg-[#48503c] flex align-middle justify-center"
+					class="w-6 bg-buttonbg aspect-square rounded-full duration-150 hover:bg-buttonbghover flex align-middle justify-center"
 					on:click={() => {
 						appWindow.minimize();
 					}}
 				>
-					<img class="stroke-white" src={minimize} alt="" />
+					<img class="stroke-primaryfont" src={minimize} alt="" />
 				</div>
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<div
 					id="maximise"
-					class="w-6 bg-[#383e2f] aspect-square rounded-full duration-150 hover:bg-[#48503c]  flex align-middle justify-center"
+					class="w-6 bg-buttonbg aspect-square rounded-full duration-150 hover:bg-buttonbghover  flex align-middle justify-center"
 					on:click={() => {
 						appWindow.toggleMaximize();
 						checkWindowMaximizedStatus();
 					}}
 				>
 					{#if isMaximized}
-						<img class="stroke-white" src={maximise} alt="" />
+						<img class="stroke-primaryfont" src={maximise} alt="" />
 					{:else}
-						<img class="stroke-white" src={restore} alt="" />
+						<img class="stroke-primaryfont" src={restore} alt="" />
 					{/if}
 				</div>
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<div
 					id="close"
-					class="w-6 bg-[#383e2f] aspect-square rounded-full duration-150 hover:bg-[#48503c]  flex align-middle justify-center"
+					class="w-6 bg-buttonbg aspect-square rounded-full duration-150 hover:bg-buttonbghover  flex align-middle justify-center"
 					on:click={() => {
 						appWindow.close();
 					}}
 				>
-					<img class="stroke-white" src={close} alt="" />
+					<img class="stroke-primaryfont" src={close} alt="" />
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="bg-[#1b1c18] text-white h-full rounded-b-xl border-t-0 border-gray-700 border-[1px]">
+	<div class="bg-background text-primaryfont h-full rounded-b-xl border-t-0 border-border_color border-[1px]">
 		<slot />
 	</div>
 </div>
