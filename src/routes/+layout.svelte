@@ -42,7 +42,7 @@
 <div class="flex flex-col w-screen  h-screen bg-transparent">
 	<div
 		id="title-bar"
-		class="bg-background h-12  rounded-t-xl border-border_color border-[1px] select-none text-primaryfont hover:cursor-default relative"
+		class="bg-titlebar h-12  rounded-t-xl border-border_color border-[1px] select-none text-primaryfont hover:cursor-default relative"
 	>
 		<div
 			class="w-full h-full absolute top-0 flex align-middle flex-row justify-center"
